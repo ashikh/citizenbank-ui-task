@@ -1,0 +1,124 @@
+.investment-section h1::after,
+.citizens-advantage h1::after {
+	content: "";
+	display: block;
+	width: 73px;
+	height: 2px;
+	background-image: url("../assets/images/underline.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 12px auto 0;
+}
+
+.content {
+	text-align: center;
+	margin: 64px 0 45px;
+	padding: 0 1rem;
+
+	.text {
+		text-align: left;
+	}
+}
+
+.heading {
+	font-size: 30px;
+	color: $secondary-color;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.text {
+	font-size: 0.95rem;
+	margin-bottom: 1.5rem;
+	color: $light-text;
+}
+
+.cta {
+	display: inline-block;
+	background-color: $accent-color;
+	color: white;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+	margin: 0 auto;
+
+	&:hover {
+		background-color: $accent-hover;
+	}
+}
+
+.citizens-advantage {
+	padding: 0 1rem;
+	background-color: #fff;
+
+	h1 {
+		font-size: 1.5rem;
+		text-align: center;
+		color: $primary-color;
+		margin-bottom: 1.5rem;
+	}
+
+	h2 {
+		@include respond-to(md) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.advantage-items {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	@include respond-to(md) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem 3rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+.advantage-item {
+	h3 {
+		font-size: 1.125rem;
+		color: $primary-color;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		font-size: 0.95rem;
+		color: $light-text;
+		line-height: 1.6;
+	}
+}
+
+.citizens-home-loans {
+	padding: 2rem 1rem;
+
+	h4 {
+		text-align: center;
+		color: #fff;
+		background-color: $primary-color;
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		@include respond-to(md) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.loan-desc {
+	text-align: justify;
+	font-size: 18px;
+	color: $light-text;
+	margin: 0 auto;
+	line-height: 1.6;
+	background: #ebf7f5;
+	padding: 24px 12px;
+}

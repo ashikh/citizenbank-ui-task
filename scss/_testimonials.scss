@@ -1,0 +1,48 @@
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	@include respond-to(md) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.testimonial {
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+	border-radius: 8px;
+
+	@include respond-to(md) {
+		flex: 1;
+		margin: 0 0.5rem;
+	}
+
+	img {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		margin-bottom: 1rem;
+	}
+
+	.quote {
+		font-size: 0.95rem;
+		color: $light-text;
+		margin: 0.5rem auto;
+		width: 195px;
+	}
+
+	.name {
+		font-weight: bold;
+		color: $primary-color;
+
+		span {
+			display: block;
+			font-weight: normal;
+			color: #555;
+			font-size: 0.875rem;
+		}
+	}
+}

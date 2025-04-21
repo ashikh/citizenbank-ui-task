@@ -1,0 +1,55 @@
+.site-footer {
+	background-color: #fff;
+	padding: 2rem 1rem;
+	font-size: 0.9rem;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+
+	img {
+		width: 24px;
+	}
+
+	@include respond-to(md) {
+		justify-content: flex-start;
+	}
+}
+
+.footer-disclaimer {
+	margin-bottom: 1.5rem;
+	font-size: 12px;
+	line-height: 16px;
+	color: $footer-text;
+	max-width: 100%;
+
+	a {
+		color: $footer-text;
+	}
+
+	@include respond-to(md) {
+		font-size: 11px;
+		line-height: 21px;
+	}
+}
+
+.footer-links {
+	a {
+		text-decoration: none;
+		color: $footer-text;
+		font-size: 0.85rem;
+		font-weight: bold;
+	}
+
+	@include respond-to(md) {
+		margin-top: 1rem;
+	}
+}
